@@ -22,7 +22,7 @@ module.exports = function (config, env) {
         },
         plugins: [
             ...config.plugins,
-            new webpack.ProvidePlugin({
+            new ProvidePlugin({
                 Buffer: ['buffer', 'Buffer'],
             }),
             new ProvidePlugin({
