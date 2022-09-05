@@ -180,7 +180,25 @@ const Terminal = () => {
       ]);
       const pickedNose = await (
         await fetch(
-          `https://api-mainnet.magiceden.dev/v2/tokens/${randomizedNose}`
+          `https://api-mainnet.magiceden.dev/v2/tokens/${randomizedNose}`,
+          {
+            credentials: "include",
+            headers: {
+              "User-Agent":
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:99.0) Gecko/20100101 Firefox/99.0",
+              Accept:
+                "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+              "Accept-Language": "en-GB,en;q=0.5",
+              "Upgrade-Insecure-Requests": "1",
+              "Sec-Fetch-Dest": "document",
+              "Sec-Fetch-Mode": "navigate",
+              "Sec-Fetch-Site": "cross-site",
+              Pragma: "no-cache",
+              "Cache-Control": "no-cache",
+            },
+            method: "GET",
+            mode: "cors",
+          }
         )
       ).json();
       setOutputHistory([
