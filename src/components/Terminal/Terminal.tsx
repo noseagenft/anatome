@@ -138,14 +138,20 @@ const Terminal = () => {
       return;
     } else if (currentCommand === "clear" || currentCommand === "reset") {
       setCommandHistory([]);
-      setOutputHistory(["Output and command history cleared.", "<br />"]);
+      setOutputHistory([
+        "Output and command history cleared.",
+        "<br />",
+        "Welcome to the command line interface",
+        "Type <i><b>help</b></i> for a list of commands",
+        "<br />",
+      ]);
       setCurrentCommand("");
       setCurrentCommandHistoryIndex(0);
     } else if (currentCommand === "help") {
       const commandAndHelp = Object.entries(commandResponseMapping)
         .map(([command, commandResponse]) => {
           return commandResponse.help
-            ? `<div style="display: flex; justify-content: space-between; max-width: 480px;"><b>${command}</b>${commandResponse.help}</div>`
+            ? `<div class="helpRow"><b>${command}</b>${commandResponse.help}</div>`
             : "";
         })
         .filter(Boolean);
