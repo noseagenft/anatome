@@ -180,7 +180,7 @@ const Terminal = () => {
       ]);
       const pickedNose = await (
         await fetch(
-          `https://api-mainnet.magiceden.dev/v2/tokens/${randomizedNose}`,
+          `https://anatome-cors.herokuapp.com/https://api-mainnet.magiceden.dev/v2/tokens/${randomizedNose}`,
           {
             credentials: "include",
             headers: {
@@ -195,6 +195,8 @@ const Terminal = () => {
               "Sec-Fetch-Site": "cross-site",
               Pragma: "no-cache",
               "Cache-Control": "no-cache",
+              Origin: window.location.protocol + "//" + window.location.host,
+              "X-Requested-With": "XMLHttpRequest",
             },
             method: "GET",
             mode: "cors",
