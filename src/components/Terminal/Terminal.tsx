@@ -182,7 +182,6 @@ const Terminal = () => {
         await fetch(
           `https://anatome-cors.herokuapp.com/https://api-mainnet.magiceden.dev/v2/tokens/${randomizedNose}`,
           {
-            credentials: "include",
             headers: {
               "User-Agent":
                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:99.0) Gecko/20100101 Firefox/99.0",
