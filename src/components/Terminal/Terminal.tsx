@@ -61,7 +61,7 @@ const Terminal = () => {
       help: "status of collections under the Anatome saga",
       output: `
       <b style="color: #1aff1a">[COMPLETE]</b> <b>Nose Age</b> - <i>456 Noses sniffing for $SNIFF to gather the rest of the body parts. Genesis collection.</i><br/>
-      <b style="color: #e78710">[ MINTING]</b> <b>Eyes Age</b> - <i>??? Eyes, looking around on the Solana blockchain, enjoying good art.</i><br/>
+      <b style="color: #e78710">[ MINTING]</b> <b>Eyes Age</b> - <i>912 Eyes, looking around on the Solana blockchain, enjoying good art.</i><br/>
       <b style="color: #ff4500">[ UNKNOWN]</b> <b>Lips Age</b> - <i>The generative(?) art <b>lips</b> collection of unknown size.</i><br/>
       <b style="color: #ff4500">[ UNKNOWN]</b> <b>Ears Age</b> - <i>The generative(?) art <b>ears</b> collection of unknown size.</i><br/>
       <b style="color: #ff4500">[ UNKNOWN]</b> <b>VisAge</b> - <i>Combine the above to get generative(?) art <b>face</b> collection of unknown size.</i><br/>
