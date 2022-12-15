@@ -60,8 +60,8 @@ const Terminal = () => {
     collections: {
       help: "status of collections under the Anatome saga",
       output: `
-      <b style="color: #1aff1a">[ STAKING]</b> <b>Nose Age</b> - <i>456 Noses sniffing for $SNIFF to gather the rest of the body parts. Genesis collection.</i><br/>
-      <b style="color: #e78710">[ BUIDLNG]</b> <b>Eyes Age</b> - <i>??? Eyes, looking around on the Solana blockchain, enjoying good art.</i><br/>
+      <b style="color: #1aff1a">[COMPLETE]</b> <b>Nose Age</b> - <i>456 Noses sniffing for $SNIFF to gather the rest of the body parts. Genesis collection.</i><br/>
+      <b style="color: #e78710">[ MINTING]</b> <b>Eyes Age</b> - <i>??? Eyes, looking around on the Solana blockchain, enjoying good art.</i><br/>
       <b style="color: #ff4500">[ UNKNOWN]</b> <b>Lips Age</b> - <i>The generative(?) art <b>lips</b> collection of unknown size.</i><br/>
       <b style="color: #ff4500">[ UNKNOWN]</b> <b>Ears Age</b> - <i>The generative(?) art <b>ears</b> collection of unknown size.</i><br/>
       <b style="color: #ff4500">[ UNKNOWN]</b> <b>VisAge</b> - <i>Combine the above to get generative(?) art <b>face</b> collection of unknown size.</i><br/>
@@ -71,17 +71,22 @@ const Terminal = () => {
       `,
     },
     sniff: {
-      help: "opens the sniffing (staking) site for Nose Age",
+      help: "opens the sniffing (staking) site for Nose Age [COMPLETED]",
       output: "Sniffing site opened in a new tab.",
       link: "https://sniff.noseagenft.com/",
+    },
+    eyes: {
+      help: "opens the minting site for Eyes Age",
+      output: "Eyes Age mint site opened in a new tab.",
+      link: "https://eyes-mint.anatome.fun/",
     },
     picknose: {
       help: "picks a random nose from the collection",
     },
     shop: {
-      help: "view the $SNIFF shop (stocking in progress)",
-      output:
-        "The $SNIFF shop is still being stocked at the moment. Check back soon!",
+      help: "opens the $SNIFF shop",
+      output: "The $SNIFF shop site opened in a new tab.",
+      link: "https://aten.app/anatome",
     },
     connect: {
       help: "connect wallet",
